@@ -1,0 +1,26 @@
+.containerBtn {
+  cursor: pointer;
+
+  width: 90px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerIcon {
+  background-color: rgb(23, 23, 23);
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #959392;
+  transition: transform 0.2s ease, border 0.3s ease;
+  border: 2px solid transparent;
+}
+.containerIcon:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--color-primary-hover);
+}

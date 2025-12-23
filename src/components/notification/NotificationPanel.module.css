@@ -1,0 +1,51 @@
+.containerPanel {
+  background-color: rgba(78, 78, 78, 0.195);
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  border-radius: 10px;
+}
+.username {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerBtn {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btnAccept {
+  border: none;
+  color: #4caf50;
+  background-color: rgba(0, 0, 0, 0.347);
+  padding: 8px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btnAccept:hover {
+  background-color: rgba(0, 0, 0, 0.77);
+}
+.btnCancel {
+  background-color: transparent;
+  border: none;
+  color: #e53935;
+  background-color: rgba(0, 0, 0, 0.347);
+  padding: 8px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btnCancel:hover {
+  background-color: rgba(0, 0, 0, 0.77);
+}

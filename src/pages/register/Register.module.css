@@ -1,0 +1,176 @@
+.containerRegister {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.modal {
+  background-color: rgba(18, 18, 18, 0.95);
+  box-shadow: 0px 0px 5px black;
+  padding: 15px 40px;
+  border-radius: 12px;
+  width: 380px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--color-text);
+  margin-bottom: 5px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Лейблы */
+.modal form label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  margin-top: 14px;
+}
+
+.requred {
+  color: var(--color-primary-hover);
+  margin-left: 2px;
+  font-weight: 700;
+}
+
+.modal form input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 5px #d3d3d361;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: rgba(78, 78, 78, 0.195);
+  color: white;
+  box-sizing: border-box;
+}
+.modal form input.inputError {
+  box-shadow: 0 0 5px red;
+  transition: box-shadow 0.2s;
+}
+
+.modal form input:focus {
+  border-color: var(--color-primary-hover);
+  box-shadow: 0 0 5px #ff660061;
+  background-color: rgba(21, 21, 21, 0.7);
+}
+
+.modal form button {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 13px 18px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Comfortaa", sans-serif;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  background-color: rgba(78, 78, 78, 0.195);
+  margin-top: 5px;
+}
+
+.modal form button:hover {
+  border: 1px solid var(--color-primary-hover);
+  background-color: rgb(27, 26, 26);
+}
+
+.p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin-top: 10px;
+}
+
+.singIn {
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.singIn:hover {
+  color: var(--color-primary-hover);
+}
+
+.close {
+  color: var(--color-text-light);
+  transition: color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  left: -60px;
+  cursor: pointer;
+  background-color: rgba(18, 18, 18, 0.95);
+  box-shadow: 0px 0px 5px black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.close:hover {
+  color: var(--color-primary-hover);
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .modal h2 {
+    font-size: 1.5rem;
+  }
+  .modal form label {
+    font-size: 0.7rem;
+  }
+
+  .modal form input {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .modal form button {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+  .singIn {
+    font-size: 0.7rem;
+  }
+  .p {
+    font-size: 0.7rem;
+  }
+  .close {
+    left: -35px;
+    bottom: 15px;
+    padding: 2px;
+  }
+  .error {
+    color: red;
+    font-size: 8px;
+    height: 5px;
+  }
+}

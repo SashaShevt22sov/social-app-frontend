@@ -1,0 +1,24 @@
+.containerPrivatePage {
+  width: 99vw;
+  height: 99vh;
+  border-radius: 8px;
+  box-shadow: 0 0 5px black;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+.left {
+  width: 120px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.center {
+  width: 100%;
+  min-width: 20%;
+  padding: 5px;
+}
+.right {
+  width: 400px;
+}

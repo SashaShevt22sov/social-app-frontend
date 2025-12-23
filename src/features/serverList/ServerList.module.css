@@ -1,0 +1,74 @@
+.containerServerList {
+  background-color: rgba(18, 16, 16, 0.827);
+  height: 630px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 13px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 90px;
+  box-shadow: 0 0 5px black;
+  gap: 10px;
+  position: relative;
+  /* Добавляем скролл бар */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) rgba(18, 16, 16, 0.827);
+}
+
+/* Для WebKit браузеров */
+.containerServerList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.containerServerList::-webkit-scrollbar-track {
+  background: rgba(18, 16, 16, 0.827);
+  border-radius: 10px;
+}
+
+.containerServerList::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-hover);
+  border-radius: 10px;
+}
+.blockServerItem {
+  background-color: rgba(18, 18, 18, 0.95);
+  border-radius: 25px;
+  height: 55px;
+  min-height: 55px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid rgb(54, 54, 54);
+  transition: border 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.blockServerItem:hover {
+  border: 2px solid var(--color-primary-hover);
+  transform: scale(1.05);
+}
+
+.blockServerItem.active {
+  border: 2px solid var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+}
+.nameBlock {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.serverP {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}

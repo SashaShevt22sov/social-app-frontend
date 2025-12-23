@@ -1,0 +1,49 @@
+.containerUserPanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 12px;
+  background-color: rgba(34, 34, 34, 0.95);
+  gap: 10px;
+  border-radius: 10px;
+}
+
+/* PROFILE */
+.containerProfileUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatarUser {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nickNameUser {
+  color: #e5e7eb;
+  font-size: 14px;
+  font-weight: 500;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+/* BUTTONS */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+}

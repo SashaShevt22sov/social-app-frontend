@@ -1,0 +1,60 @@
+/* 
+   Подключение шрифтов Comfortaa
+   */
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./assets/fonts/Comfortaa-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./assets/fonts/Comfortaa-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./assets/fonts/Comfortaa-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./assets/fonts/Comfortaa-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  background-image: url("./assets/img/Бэграундпеределанный.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+:root {
+  --color-background: #000000;
+  --color-modal-bg: rgba(18, 18, 18, 0.95);
+  --color-primary: #00eeff;
+  --color-primary-hover: #ff6700;
+  --color-text: #f7f7f7;
+  --color-text-light: #5a5a5a;
+}

@@ -1,0 +1,53 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal {
+  background-color: rgba(18, 18, 18, 0.95);
+  box-shadow: 0px 0px 5px black;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.titleSuccess {
+  color: #4caf50;
+}
+
+.titleError {
+  color: #e53935;
+}
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 13px 18px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Comfortaa", sans-serif;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  background-color: rgba(78, 78, 78, 0.195);
+}
+.btn:hover {
+  border: 1px solid var(--color-primary-hover);
+  background-color: rgb(27, 26, 26);
+}

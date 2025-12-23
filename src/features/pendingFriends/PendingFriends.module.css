@@ -1,0 +1,59 @@
+.containerPendingFriends {
+  height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.pendingEmpty {
+  text-align: center;
+  opacity: 0.7;
+}
+
+.containerBlockFriends {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  height: 55px;
+
+  background-color: rgba(78, 78, 78, 0.195);
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.containerBlockFriends:hover {
+  background-color: #303030;
+}
+
+.containerUserName {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.containerPending {
+  white-space: nowrap;
+  font-size: 13px;
+  flex-shrink: 0;
+  color: #4caf50;
+}
+
+.containerCancel {
+  flex-shrink: 0;
+  color: #e53935;
+  font-size: 14px;
+
+  border: 2px solid transparent;
+  padding: 5px 8px;
+  border-radius: 7px;
+
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.containerCancel:hover {
+  border: 2px solid #e53935;
+}

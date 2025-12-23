@@ -1,0 +1,60 @@
+.containerFriendsPanel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 12px;
+  background-color: rgba(78, 78, 78, 0.195);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.containerFriendsPanel:hover {
+  background-color: #4c4c4c;
+}
+
+.containerAvatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.containerNickName {
+  flex: 1;
+}
+
+.nickName {
+  color: #e5e7eb;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  border: 2px solid var(--color-primary-hover);
+}
