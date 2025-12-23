@@ -106,7 +106,7 @@ Frontend часть социального приложения с систем�
 
 ```bash
 # Клонируем репозиторий
-git clone https://github.com/your-username/social-app-frontend.git
+git clone https://github.com/SashaShevt22sov/social-app-frontend.git
 cd social-app-frontend
 
 # Установка зависимостей
